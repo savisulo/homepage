@@ -11,14 +11,14 @@ const Contact = (props) => {
             <InternalLink href="mailto: suvi.j.salo@gmail.com" text="suvi.j.salo@gmail.com" />
             <Notification alert={props.alert} />
             <form onSubmit={props.sendMessage}>
-              <label for="name">Your Name:</label><br/>
-              <input name="name" value={props.newName} onChange={props.handleNameChange} className="input-field" /><br/>
-              <label for="email">Your Email:</label><br/>
-              <input name="email" value={props.newEmail} onChange={props.handleEmailChange} className="input-field" /><br/>
-              <label for="subject">Subject:</label><br/>
-              <input name="subject" value={props.newSubject} onChange={props.handleSubjectChange} className="input-field" /><br/>
-              <label for="message">Message:</label><br/>
-              <textarea name="message" value={props.newMessage} onChange={props.handleMessageChange} className="textarea-field" /><br/>
+              <label htmlFor="name">Your Name:</label><br/>
+              <input name="name" id="name" value={props.newName} onChange={props.handleNameChange} className="input-field" /><br/>
+              <label htmlFor="email">Your Email:</label><br/>
+              <input name="email" id="email" value={props.newEmail} onChange={props.handleEmailChange} className="input-field" /><br/>
+              <label htmlFor="subject">Subject:</label><br/>
+              <input name="subject" id="subject" value={props.newSubject} onChange={props.handleSubjectChange} className="input-field" /><br/>
+              <label htmlFor="message">Message:</label><br/>
+              <textarea name="message" id="message" value={props.newMessage} onChange={props.handleMessageChange} className="textarea-field" /><br/>
               <button type="submit" className="submit-button">SEND MESSAGE</button>
             </form>
           </div>

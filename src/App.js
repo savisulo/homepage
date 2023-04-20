@@ -106,7 +106,7 @@ const App = () => {
         alert={alert}
         download={handleDownload}
       />
-      <div class="to-top" id="to-top">
+      <div className="to-top" id="to-top">
         <a href="#header">&#8679;</a>
       </div>
       <Footer download={handleDownload} />
