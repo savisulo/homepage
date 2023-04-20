@@ -1,8 +1,8 @@
 import InternalLink from './InternalLink'
 
-const Intro = () => {
+const Intro = (props) => {
     return (
-      <div>
+      <section>
         <h2>
           GREETINGS, MY NAME IS SUVI!
         </h2>
@@ -23,13 +23,11 @@ const Intro = () => {
         </div>
         <div className="aligned-buttons">
             <div className="button">
-              <InternalLink href="{{ url_for('main.index', _anchor='projects') }}" text="MY PROJECTS" />
+              <InternalLink href="#projects" text="MY PROJECTS" />
             </div>
-            <div className="button">
-              <a href="{{ url_for('main.index', _anchor='projects') }}">DOWNLOAD RESUME</a>
-            </div>
+            <button className="button" onClick={props.download}>DOWNLOAD RESUME</button>
         </div>
-      </div>
+      </section>
     )
 }
 

@@ -1,6 +1,6 @@
 const About = () => {
     return (
-      <div>
+      <section id="about">
         <h2>ABOUT ME</h2>
         <div className="about-text">
           <p>
@@ -45,6 +45,7 @@ const About = () => {
               <ul>
                   <li>Node.js</li>
                   <li>MySQL</li>
+                  <li>MongoDB</li>
                   <li>Git</li>
               </ul>
           </div>
@@ -53,7 +54,7 @@ const About = () => {
               reading good books, watching drama and psychological thrillers, jogging, and practicing reformer Pilates.
           </p>
         </div>
-      </div>
+      </section>
     )
 }
 

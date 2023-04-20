@@ -1,0 +1,53 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "name": "Niko Hertsa",
+      "email": "joku.joku@gmail.com",
+      "subject": "message for you",
+      "message": "hello from here, I just rented a car!"
+    },
+    {
+      "id": 2,
+      "name": "Lilli Lallinen",
+      "email": "lilli.lallinen@gmail.com",
+      "subject": "message",
+      "message": "just testing"
+    },
+    {
+      "id": 3,
+      "name": "Yrjö",
+      "email": "joku.yrjo@gmail.com",
+      "subject": "hi",
+      "message": "minä olen Yrjö"
+    },
+    {
+      "name": "type your name here",
+      "email": "type your email here",
+      "subject": "type the subject of your message here",
+      "message": "message...",
+      "id": 4
+    },
+    {
+      "name": "LALLI",
+      "email": "john@example.com",
+      "subject": "hello",
+      "message": "fdssssss",
+      "id": 5
+    },
+    {
+      "name": "Suvi Salo",
+      "email": "hh.hh@kk.fi",
+      "subject": "moi",
+      "message": "fghfjjy",
+      "id": 6
+    },
+    {
+      "name": "suvi",
+      "email": "suvi@example.com",
+      "subject": "hello",
+      "message": "ghfjfyjdjfy",
+      "id": 7
+    }
+  ]
+}

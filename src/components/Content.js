@@ -1,4 +1,3 @@
-import Statistics from './Statistics'
 import Intro from './Intro'
 import About from './About'
 import Projects from './Projects'
@@ -7,24 +6,22 @@ import Contact from './Contact'
 
 const Content = (props) => {
     return (
-      <div>
-        <div>
-          <h3>Give feedback of the page</h3>
-          <button onClick={props.handleclickGood}>
-            Good
-          </button>
-          <button onClick={props.handleclickNeutral}>
-            Neutral
-          </button>
-          <button onClick={props.handleclickBad}>
-            Bad
-          </button>
-        </div>
-        <Statistics good={props.good} neutral={props.neutral} bad={props.bad} all={props.all} average={props.average} positive={props.positive} />
-        <Intro />
+      <div className="body-content">
+        <Intro download={props.download} />
         <About />
         <Projects />
-        <Contact />
+        <Contact
+          alert={props.alert}
+          sendMessage={props.onSubmit}
+          newName={props.value1}
+          handleNameChange={props.onChange1}
+          newEmail={props.value2}
+          handleEmailChange={props.onChange2}
+          newSubject={props.value3}
+          handleSubjectChange={props.onChange3}
+          newMessage={props.value4}
+          handleMessageChange={props.onChange4}
+        />
       </div>
     )
 }
