@@ -28,27 +28,31 @@ const App = () => {
       email: newEmail,
       subject: newSubject,
       message: newMessage,
-      id: messages.length + 1
     }
 
     messageService
       .create(messageObject)
       .then(returnedMessage => {
         setMessages(messages.concat(returnedMessage))
+        if (messages.some(m => m.email.toLowerCase() === newEmail.toLowerCase())) {
+          setAlert(`You sent me another message ${newName}, thank you!`)
+        } else {
+          setAlert(`Thank you for your message ${newName}!`)
+        }
+        setTimeout(() => {
+          setAlert(null)
+        }, 5000)
         setNewName('')
         setNewEmail('')
         setNewSubject('')
         setNewMessage('')
       })
-
-    if (messages.some(m => m.email.toLowerCase() === newEmail.toLowerCase())) {
-      setAlert(`You sent me another message ${newName}, thank you!`)
-    } else {
-      setAlert(`Thank you for your message ${newName}!`)
-    }
-    setTimeout(() => {
-      setAlert(null)
-    }, 5000)
+      .catch(error => {
+        setAlert(error.response.data.error)
+        setTimeout(() => {
+          setAlert(null)
+        }, 5000)
+      })
   }
 
   const handleNameChange = (event) => {
