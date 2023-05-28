@@ -14,7 +14,7 @@ const About = () => {
               in University of Helsinki) and then I applied to an intense training of modern web development
               lasting for 6 months (ending in March 2023). I am very happy and proud of
               myself for making this career change in my life, this really is The Thing for me!
-              But Im not going to totally forget about my previous life involved in chemistry, since chemistry and coding
+              But I'm not going to totally forget about my previous life involved in chemistry, since chemistry and coding
               goes really well together as well, so it would be great to combine those two in the future.
           </p>
           <p>

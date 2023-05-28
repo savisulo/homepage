@@ -11,9 +11,9 @@ const Intro = (props) => {
                 I'm a budding web developer who takes pride in delivering high-quality results in every project I'm involved in.
                 I'm driven to design and develop websites and softwares that are not only aesthetically pleasing,
                 but also intuitive and user-friendly.
-                My goal is to start my coding career as a junior web developer or trainee,
+                My goal is to start my coding career as a junior web developer or a trainee,
                 with a focus on either front-end or back-end development, and eventually progress to become
-                a highly skilled senior full-stack developer.
+                a highly skilled full-stack developer.
             </p>
             <p>
                 I'm excited about the possibilities that lie ahead in my coding career, and I can't wait to see where
